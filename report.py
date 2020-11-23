@@ -16,13 +16,7 @@ class report:
 		self.c=0
 		self.a()
 		
-	def a(self):
-		try:
-			self.aa=open(raw_input("[?] Account list file: ")).read().splitlines()
-		except Exception as e:
-			print "[!] File Tidak Ada%s"%(e);self.a()
-		self.target()
-		
+	
 	def target(self):
 		self.t=raw_input("[?] target id: ")
 		if self.t =="":self.target()
